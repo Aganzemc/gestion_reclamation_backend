@@ -56,9 +56,9 @@ export const authController = {
     }
   },
 
-  // Rafraîchir le token
+  // Rafraîchir le tokens 
   async refreshToken(req: Request, res: Response) {
-    try {
+    try {     
       const { refreshToken } = req.body;
 
       if (!refreshToken) {
