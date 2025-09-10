@@ -380,7 +380,7 @@ export const assignmentController = {
 
       // Formater les résultats
       const formattedStats = stats.map((stat: any) => {
-        const user = users.find(u => u.id === stat.userId);
+        const user = users.find((u: any) => u.id === stat.userId);
         return {
           userId: stat.userId,
           userName: user ? `${user.firstName} ${user.lastName}` : 'Utilisateur inconnu',

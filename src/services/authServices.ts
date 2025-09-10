@@ -112,7 +112,7 @@ export const authService = {
         password: hashedPassword,
         firstName,
         lastName,
-        role: 'USER',
+        role: 'OBSERVER',
         status: 'ACTIVE'
       },
       select: {

@@ -85,7 +85,7 @@ export const notificationController = {
   // Obtenir une notification par ID
   async getNotificationById(req: Request, res: Response) {
     try {
-      const { id! } = req.params;
+      const { id } = req.params;
       
       const notification = await prisma.notification.findUnique({
         where: {id},
